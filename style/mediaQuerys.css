@@ -1,0 +1,77 @@
+@media screen and (max-width: 432px){
+    /* não faz nada */
+}
+
+@media screen and (min-width: 915px) and (max-width: 1024px){
+    div.main > ul{
+    font-size: large;
+    color: #544528;
+    font-family: 'pixel';
+    font-weight: 200;
+}
+
+div.main > button{
+    font-size: large;
+    background-color: #544528;
+    font-family: 'pixel';
+    font-weight: 200;
+    border: none;
+    border-radius: 10px;
+    padding: 1em;
+    color: rgb(215, 221, 204);
+}
+
+}
+
+@media screen and (min-width: 1025px) and (max-width: 2496px){
+    div.main > img{
+    object-fit: contain;
+    width: 50%;
+}
+
+div.main > h1{
+    color: #544528;
+    font-family: 'pixel';
+    font-weight: 200;
+    font-size: 4em;
+}
+
+div.main > ul{
+    font-size: 2em;
+    color: #544528;
+    font-family: 'pixel';
+    font-weight: 200;
+}
+
+div.main > button{
+    font-size: 2em;
+    background-color: #544528;
+    font-family: 'pixel';
+    font-weight: 200;
+    border: none;
+    border-radius: 10px;
+    padding: 1em;
+    color: rgb(215, 221, 204);
+}
+
+div.main > div.placa > p{
+    position: absolute;
+    z-index: 10;
+    top: 0%;
+    background-color: #000000ba;
+    margin-inline: 1em;
+    padding-block: 0.5em;
+    border-radius: 25px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    backdrop-filter: blur(20px);
+    font-family: 'pixel';
+    font-size: 1.5em;
+    text-align: center;
+    color: white;
+    object-fit: cover;
+    width: 100%;
+    margin-top: 0;
+}
+}
+

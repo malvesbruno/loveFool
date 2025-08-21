@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angel</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="icon" type="image/jpg" href="imgs/icon.jpg">
+    <link rel="stylesheet" href="style/mediaQuerys.css">
+    <script src="script/script.js" ></script>
+</head>
+<body>
+    <script>
+            const senha = prompt("Digite a senha para acessar:");
+    if (senha !== "ysa") {
+        document.body.innerHTML = "<h1>Acesso negado 😢</h1>";
+    } else{
+        document.body.innerHTML =`
+        <div class="main">
+        <img src="imgs/angel.png" alt="angel" >
+        <h1>Procurada por:</h1>
+        <ul>
+            <li>Roubar meu coração</li>
+            <li>Não me chamar pra comer ambórgue</li>
+            <li>Roubar a beleza toda do mundo só pra ela</li>
+            <li>Roubar purê de batata com preda de idosas (Q coisa feia...)</li>
+            <li>Não sei mais o q escrever...</li>
+            <li>E o clima, hein? Complicado...</li>
+            <li>Voltando... Colocar prédios abaixo com seu estilo</li>
+            <li>A lista podia continuar, mas nada que eu escrevesse se compararia à você</li>
+        </ul>
+        <button onclick="aparecerPlaca()">clique aqui</button>
+        <div class="placa" id="placa">
+            <p>Não sei mais como te elogiar,<br> ent vou deixar para que o guns faça isso<br></p>
+            <img src="imgs/placa.png" alt="placa">
+            <video src="videos/guns n roses.mp4" preload="auto" controls></video>
+        </div>
+    </div>
+        `
+    }
+        </script>
+    
+</body>
+</html>
