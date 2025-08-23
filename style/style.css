@@ -27,6 +27,13 @@ div.main > h1{
     font-weight: 200;
 }
 
+div.main > h2{
+    display: none;
+    color: #544528;
+    font-family: 'pixel';
+    font-weight: 200;
+}
+
 div.main > ul{
     font-size: small;
     color: #544528;
@@ -44,6 +51,11 @@ div.main > button{
     padding: 1em;
     color: rgb(215, 221, 204);
     cursor: pointer;
+}
+
+div.main > button#botaoEscondido{
+    display: none;
+    margin-top: 1em;
 }
 
 div.main > div.placa{
