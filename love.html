@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frase do dia</title>
+    <link rel="icon" type="image/jpg" href="imgs/icon.jpg">
+    <link rel="stylesheet" href="style/frases.css">
+</head>
+<body>
+    <script>
+        async function carregarFrase() {
+            try{
+            const res = await fetch("https://api-frases-romanticas-latest.onrender.com/frase");
+            data = await res.json();
+            document.getElementById("frase").innerText = data.frase;
+            } catch (e) {
+                console.log('error: ', e);
+                document.getElementById("frase").innerText = "você é minha inspiração";
+            }
+        }
+
+        carregarFrase();
+    </script>
+    <div class="frase-place">
+        <div class="heart">
+    </div>
+    <h2 class="frase" id="frase"></h2>
+    </div>
+    
+</body>
+</html>

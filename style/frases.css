@@ -1,0 +1,64 @@
+body {
+    background: #141414;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* garante que o body ocupe a tela toda */
+    margin: 0;
+}
+
+.frase-place {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heart {
+    background-color: red;
+    height: 200px;
+    width: 200px;
+    position: relative;
+    transform: rotate(-45deg);
+    animation: pulse 1s infinite;
+}
+
+.heart:before,
+.heart:after {
+    content: "";
+    background-color: red;
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    animation: pulse2 1s infinite;
+}
+
+.heart:before {
+    top: -100px;
+}
+
+.heart:after {
+    left: 100px;
+}
+
+.frase {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -150%); /* centraliza exatamente */
+    color: white;
+    text-align: center;
+    width: 80%; /* suficiente pra frases maiores */
+    font-family: sans-serif;
+}
+
+@keyframes pulse {
+    0%, 100% { transform: rotate(-45deg) scale(1); }
+    50% { transform: rotate(-45deg) scale(1.1); }
+}
+
+@keyframes pulse2 {
+    0%, 100% { transform: rotate(-45deg) scale(1); }
+    50% { transform: rotate(-45deg) scale(1.02); }
+}
