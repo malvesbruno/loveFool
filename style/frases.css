@@ -14,6 +14,20 @@ h1{
     top: 10%;
 }
 
+.circularProgression{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 5em;
+    width: 5em;
+    border-radius: 100%;
+    background-color: transparent;
+    border-top: white 4px solid;
+    animation: rotation 1s infinite ease-in-out;
+    
+} 
+
 .frase-place {
     position: relative;
     display: flex;
@@ -68,4 +82,13 @@ h1{
 @keyframes pulse2 {
     0%, 100% { transform: rotate(-45deg) scale(1); }
     50% { transform: rotate(-45deg) scale(1.02); }
+}
+
+@keyframes rotation {
+ 0%{
+    transform: translate(-50%, -50%) rotate(0deg);
+ }   
+ 100%{
+    transform: translate(-50%, -50%) rotate(360deg);
+ }
 }

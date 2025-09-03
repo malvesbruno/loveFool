@@ -14,9 +14,12 @@
             const res = await fetch("https://api-frases-romanticas-latest.onrender.com/frase");
             data = await res.json();
             document.getElementById("frase").innerText = data.frase;
+            document.getElementById("carregar").style.display = 'none';
+
             } catch (e) {
                 console.log('error: ', e);
                 document.getElementById("frase").innerText = "você é minha inspiração";
+                document.getElementById("carregar").style.display = 'none';
             }
         }
 
@@ -26,6 +29,7 @@
     <div class="frase-place">
         <div class="heart">
     </div>
+    <div class="circularProgression" id="carregar"> </div>
     <h2 class="frase" id="frase"></h2>
     </div>
     
